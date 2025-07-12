@@ -1,0 +1,33 @@
+    .kanban-column {
+      min-height: 300px;
+      transition: all 0.3s ease;
+    }
+    .task-card {
+      transition: all 0.3s ease;
+      cursor: grab;
+    }
+    .task-card:active {
+      cursor: grabbing;
+    }
+    .task-card.dragging {
+      opacity: 0.5;
+      transform: scale(1.05);
+    }
+    .dropzone {
+      transition: background-color 0.3s ease;
+    }
+    .dropzone.highlight {
+      background-color: rgba(209, 213, 219, 0.5);
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .task-input-container {
+        width: 100% !important;
+      }
+      .kanban-board {
+        width: 100% !important;
+        margin-top: 1rem;
+      }
+    }
